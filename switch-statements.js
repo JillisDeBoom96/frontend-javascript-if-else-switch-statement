@@ -3,6 +3,27 @@
 // ==========================================
 
 const errorCode = 0;
+switch (errorCode) {
+    case 0:
+        console.log("Geen watertoevoer");
+        break;
+
+    case 1:
+        console.log("Temperatuur te laag");
+        break;
+
+    case 2:
+        console.log("Koffiebonen op");
+        break;
+
+    case 3:
+        console.log("Afvalbak vol");
+        break;
+
+    case 4:
+        console.log("Geen druk");
+        break;
+}
 
 // Je mag ervanuit gaan dat deze variabele altijd een waarde tussen de 0 en de 4 bevat. Deze codes hebben de volgende betekenissen (foutmeldingen):
 // 0: "Geen watertoevoer"
@@ -22,6 +43,25 @@ const errorCode = 0;
 // ==========================================
 
 const monitorColor = "red";
+switch (monitorColor) {
+    case "green":
+        console.log("hartslag stabiel");
+        break;
+
+    case "yellow":
+        console.log("hartslag verhoogd");
+        break;
+
+    case "orange":
+    case "red":
+        console.log("kritieke hartslag, actie vereist!");
+        break;
+
+    default:
+        console.log("Hartslag is onbekend");
+
+}
+
 
 // Deze variabele zal altijd een kleur bevatten. De specifieke kleuren waar een melding bij gemaakt moet worden zijn: "red", "green", "yellow" en "orange".
 // Deze codes zijn gelinkt aan de volgende meldingen:
@@ -30,6 +70,7 @@ const monitorColor = "red";
 // "orange": "Kritieke hartslag, actie vereist!"
 // "red": "Kritieke hartslag, actie vereist!"
 // Bij alle andere kleuren is de status van de hartslag onbekend.
+
 
 // Verwachtte uitkomsten:
 // const monitorColor = "red" geeft "Kritieke hartslag, actie vereist!" in de terminal
@@ -40,3 +81,22 @@ const monitorColor = "red";
 // ==========================================
 // [BONUSOPDRACHT] - optioneel: kun je de switch-statement uit opdracht 2 ook opschrijven met een aantal if-statements?
 // ==========================================
+
+const monitorColor1 = "red";
+if (monitorColor1 === "green") {
+    console.log("hartslag stabiel");
+}
+
+if (monitorColor1 === "yellow") {
+    console.log("hartslag verhoogd");
+}
+
+if (monitorColor1 === "orange") {
+    console.log("kritieke hartslag, actie vereist!");
+}
+
+if (monitorColor1 === "red") {
+    console.log("kritieke hartslag, actie vereist!");
+}
+
+
